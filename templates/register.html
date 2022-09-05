@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block main %}
+
+<div class="container-fluid">
+    <div class="row" id="writing">
+        <div class="col-2 spacer">
+            <!--Spacer for now-->
+        </div>
+        <div class="col-8 darkb2">
+            <p id="register">SIMPLY REGISTER</p>
+        </div>
+        <div class="col-2 spacer">
+            <!--Also spacer-->
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="row" id="writing">
+        <div class="col-2">
+            <!--Spacer for now-->
+        </div>
+        <div class="col-8" id="register-bottom-space">
+            <div class="row">
+                <div class="col-5">
+                    <!--Spacer-->
+                </div>
+                <div class="col-2">
+                    <hr>
+                        {{ wtf.quick_form(form) }}
+                        {{ form.csrf_token }}
+                    <hr>
+                </div>
+                <div class="col-5">
+                    <!--Spacer-->
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <!--Also spacer-->
+        </div>
+    </div>
+</div>
+
+{% endblock %}

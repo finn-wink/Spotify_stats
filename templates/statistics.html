@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+<div class="container-fluid">
+    <div class="row" id="writing">
+        <div class="col-2 spacer">
+            <!--Spacer for now-->
+        </div>
+        <div class="col-8 darkb">
+            <p id="stats">MY STATS</p></a>
+        </div>
+        <div class="col-2 spacer">
+            <!--Also spacer-->
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+            <!--Spacer for now-->
+        </div>
+        <div class="col-8 center" id="get-bottom">
+            <h3 id="Top10">Top 10 songs:</h3>
+            <table id="most_table">
+                <tr>
+                    {% for header in headings %}
+                    <th id="most_table_row">{{ header }}</th>
+                    {% endfor %}
+                </tr>
+                {% for row in data %} 
+                <tr>
+                    {% for cell in row %} 
+                    <td id="most_table_data">{{ cell }}</td>
+                    {% endfor %} 
+                </tr>
+                {% endfor %}
+            </table>
+            <h3 id="Top10">Top 10 most skipped songs:</h3>
+            <table id="most_table">
+                <tr>
+                    {% for header in headings_2 %}
+                    <th id="most_table_row">{{ header }}</th>
+                    {% endfor %}
+                </tr>
+                {% for row in data_2 %} 
+                <tr>
+                    {% for cell in row %} 
+                    <td id="most_table_data">{{ cell }}</td>
+                    {% endfor %} 
+                </tr>
+                {% endfor %}
+            </table>
+            <h3 id="Top10">Here are 10 recommendations by Spotify:</h3>
+            <table id="most_table">
+                <tr>
+                    {% for header in headings_3 %}
+                    <th id="most_table_row">{{ header }}</th>
+                    {% endfor %}
+                </tr>
+                {% for row in data_3 %} 
+                <tr>
+                    {% for cell in row %} 
+                    <td id="most_table_data">{{ cell }}</td>
+                    {% endfor %} 
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        <div class="col-2">
+            <!--Also spacer-->
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

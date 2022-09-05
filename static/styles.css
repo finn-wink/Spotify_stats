@@ -1,0 +1,147 @@
+h1 {
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#header {
+    background-color: rgb(33, 37, 41);
+    height: 100px;
+    padding-top: 20px;
+}
+
+#spacer {
+    height: 20px;
+}
+
+#welcome {
+    text-align: center;
+    font-size: 150px;
+    color: lightgray;
+    padding-top: 100px;
+}
+
+.button {
+    border: none;
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+#button {
+    text-align: center;
+}
+
+.username {
+    padding-top: 15px;
+}
+
+#title {
+    font-size: 20px;
+    color: lightgray;
+    padding-top: 20px;
+}
+
+.spacer {
+    background-color: rgb(33, 37, 41);
+}
+
+.darkb {
+    background-color: rgb(33, 37, 41);
+    height: 500px;
+}
+
+.darkb2 {
+    background-color: rgb(33, 37, 41);
+    height: 300px;
+}
+
+.bottompage {
+    padding-top: 100px;
+}
+
+#bottom {
+    text-align: center;
+}
+
+#register {
+    text-align: center;
+    font-size: 100px;
+    color: lightgray;
+    padding-top: 50px;
+}
+
+#stats {
+    text-align: center;
+    font-size: 150px;
+    color: lightgray;
+    padding-top: 100px;
+}
+
+#stats:hover {
+    color: darkgrey;
+}
+
+#welcome {
+    text-align: center;
+    font-size: 100px;
+    color: lightgray;
+    padding-top: 50px;
+}
+
+#login-bottom-space {
+    padding-bottom: 150px;
+}
+
+#register-bottom-space {
+    padding-bottom: 80px;
+}
+
+#get-bottom {
+    padding-bottom: 150px;
+}
+
+#instruct {
+    padding-top: 30px;
+    text-align: center;
+}
+
+#upload-form {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+#recent_spacer {
+    padding-top: 100px;
+}
+
+#most_table {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#instructions {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#most_table_row {
+    border-bottom: 1px solid black;
+}
+
+#most_table_data {
+    border-bottom: 1px solid black;
+}
+
+#Top10 {
+    padding-bottom: 15px;
+    padding-top: 25px;
+    font-size: 20px;
+}

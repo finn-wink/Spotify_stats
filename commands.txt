@@ -1,0 +1,30 @@
+Disable script regulations:
+Set-ExecutionPolicy RemoteSigned
+
+Reset:
+Set-ExecutionPolicy Restricted
+
+Starting her back up:
+C:\Users\winke\Documents\Programming\venv\Scripts\activate.bat
+
+
+----------------------------------------------------------------------------------------
+
+Things that still need to be done:
+
+Statistics:
+- When the last files were uploaded using the name of the directory
+- Top 10 list
+
+API:
+- Finding genres of all the songs
+- Finding people individual recommendations for the music that they listen to.
+
+For funs:
+- Create a report bug feature that loads all the data on the database with the user_id
+
+----------------------------------------------------------------------------------------
+
+Start jupyter if its being dumb:
+jupyter notebook --port=8889 --no-browser
+

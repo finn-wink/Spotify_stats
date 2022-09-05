@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+<div class="container-fluid">
+    <div class="row" id="writing">
+        <div class="col-2 spacer">
+            <!--Spacer for now-->
+        </div>
+        <div class="col-8 darkb2">
+            <p id="welcome">INSTRUCTIONS</p>
+        </div>
+        <div class="col-2 spacer">
+            <!--Also spacer-->
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+            <!--Spacer for now-->
+        </div>
+        <div class="col-8 center">
+            <p id="instruct">Hello, please complete the following steps to view your spotify stats. <br>
+            <ol id="instructions">
+                <li>Request your spotify data through the spotify app</li>
+                <li>Upload all the files labeled 'StreamingHistory#' below</li>
+                <li>Once uploaded, the app will calculate and display your stats on a new page</li>
+            </ol>
+        </p>
+        <form method="POST" action="" enctype="multipart/form-data">
+            <p><input type="file" name="json_file" multiple accept=".json"></p>
+            <p><input type="submit" value="Submit"></p>
+        </form> 
+        <p id="recent_spacer">If you have already uploaded a file, you can use your most recent upload here.</p>
+        <form action="/calculate" method="POST"><p><input type="submit" value="Use my most recent file"></p>
+        </form>
+        </div>
+        <div class="col-2">
+            <!--Also spacer-->
+        </div>
+    </div>
+</div>
+
+{% endblock %}

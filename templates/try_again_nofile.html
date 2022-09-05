@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+<div class="container-fluid">
+    <div class="row" id="writing">
+        <div class="col-2 spacer">
+            <!--Spacer for now-->
+        </div>
+        <div class="col-8 darkb2">
+            <p id="welcome">Nope</p>
+        </div>
+        <div class="col-2 spacer">
+            <!--Also spacer-->
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+            <!--Spacer for now-->
+        </div>
+        <div class="col-8 center">
+            <p id="instruct">You seem to not have uploaded anything yet.<br>
+        </p>
+        <form action="/instruct">
+            <p><input type="submit" value="Try again mate"></p>
+        </form> 
+        </div>
+        <div class="col-2">
+            <!--Also spacer-->
+        </div>
+    </div>
+</div>
+
+{% endblock %}

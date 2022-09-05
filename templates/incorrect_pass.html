@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+
+<div class="row" id="spacer">
+    <div class="col-12">
+        <!--Keep some space-->
+    </div>
+</div>
+
+<div class="row" id="writing">
+    <div class="col-2">
+        <!--Spacer for now-->
+    </div>
+    <div class="col-8">
+        <p id="welcome">Wrong password, bruh</p>
+    </div>
+    <div class="col-2">
+        <!--Also spacer-->
+    </div>
+</div>
+
+<div class="row" id="writing">
+    <div class="col-2">
+        <!--Spacer for now-->
+    </div>
+    <div class="col-8" id="button">
+        <form action="/login" method="POST">
+            <button class ="button" type="submit">Try again</button>
+        </form>
+    </div>
+    <div class="col-2">
+        <!--Also spacer-->
+    </div>
+</div>
+
+
+
+{% endblock %}
