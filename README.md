@@ -1,8 +1,5 @@
 # Statify: Your personal listening statistics
 
-#### Video Demo:  <URL HERE>
-
-#### Description:
 ##### The idea:
 The idea for this project came when I saw a video about individuals downloading their Google data,
 specifically the json files that were returned to them from the Google server. I quickly began to 
