@@ -18,7 +18,7 @@ from helper import login_required, RegisterForm, LoginForm, API_class
 #Initializing a bunch of shit
 app = Flask(__name__)
 Bootstrap(app)
-app.config['SECRET_KEY'] = "oJyp6MPN7cwCUpW"
+app.config['SECRET_KEY'] = ""
 
 @app.route("/", methods=["GET", "POST"])
 @login_required
