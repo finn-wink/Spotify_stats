@@ -38,8 +38,8 @@ def login_required(f):
 class API_class:
     def search_artists(self, artist):
         #searching for the particular artist and returning it
-        client_id = 'ec391a53138f440da1ab2e2f9dbb9883'
-        client_secret = '68950a176080450ea34e6dd48ad1b81d'
+        client_id = ''
+        client_secret = ''
 
         client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
         sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
@@ -49,8 +49,8 @@ class API_class:
 
     def recommend_me(self, artist_ids):
         #take the list of artists and generate recommendations
-        client_id = 'ec391a53138f440da1ab2e2f9dbb9883'
-        client_secret = '68950a176080450ea34e6dd48ad1b81d'
+        client_id = ''
+        client_secret = ''
 
         client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
         sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
